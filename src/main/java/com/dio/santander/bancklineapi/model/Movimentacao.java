@@ -1,8 +1,11 @@
 package com.dio.santander.bancklineapi.model;
 
+import java.time.LocalDateTime;
+
+
 public class Movimentacao {
 	private Integer id;
-	private LocalDatetime dataHora;
+	private LocalDateTime dataHora;
 	private String descricao;
 	private Double valor;
 	private MovimentacaoTipo tipo;
@@ -13,10 +16,10 @@ public class Movimentacao {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public LocalDatetime getDataHora() {
+	public LocalDateTime getDataHora() {
 		return dataHora;
 	}
-	public void setDataHora(LocalDatetime dataHora) {
+	public void setDataHora(LocalDateTime dataHora) {
 		this.dataHora = dataHora;
 	}
 	public String getDescricao() {
